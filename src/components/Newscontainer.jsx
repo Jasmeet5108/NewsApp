@@ -23,7 +23,7 @@ const Newscontainer = (props) => {
 
             <div className='flex flex-wrap gap-8 justify-center pb-8'>
                 {/* Card */}
-                {data.map((item, index) =>
+                {data && data.map((item, index) =>
                     <div key={index}>
                         <Newscard Img={item.urlToImage ? item.urlToImage : "No Image"} title={item.title} desc={item.description} url={item.url} />
                     </div>
