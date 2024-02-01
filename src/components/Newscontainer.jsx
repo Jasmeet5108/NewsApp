@@ -5,15 +5,13 @@ const Newscontainer = (props) => {
 
     const { apiKey, category, heading, country } = props;
 
-    const [text, setText] = useState("");
-
     const [data, setData] = useState([])
 
     const getData = () => {
         fetch(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`)
             .then(res => res.json())
             .then(data => setData(data.articles))
-            .catch(() => { setText("Limit Reached Bro") })
+            .catch(err => console.log(`Error Occured => ${err}`))
     }
 
     useEffect(() => {
@@ -23,7 +21,6 @@ const Newscontainer = (props) => {
     return (
         <>
             <div className='p-2 text-3xl my-4 text-center'>{`Top News headlines - ${heading}`}</div>
-            <div>{text}</div>
 
             <div className='flex flex-wrap gap-8 justify-center pb-8'>
                 {/* Card */}
