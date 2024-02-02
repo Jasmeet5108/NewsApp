@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 
     const hideMenu = () => {
-        setDropdownOpen(isDropdownOpen === false)
+        setDropdownOpen(isDropdownOpen === false);
     }
 
     return (
