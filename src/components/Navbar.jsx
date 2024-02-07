@@ -46,7 +46,7 @@ const Navbar = () => {
                                     <Link to="/" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
                                         General
                                     </Link>
-                                    <Link to="/" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/business" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
                                         Business
                                     </Link>
                                     <Link to="/science" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
