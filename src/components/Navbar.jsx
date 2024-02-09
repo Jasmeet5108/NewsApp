@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className='bg-violet-300'>
+        <header className='bg-sky-400'>
             <nav className='flex justify-between items-center max-w-screen-2xl mx-auto h-16'>
                 <h2 className='text-2xl sm:text-[27px] pl-3'>NewsApi</h2>
                 <div className='flex gap-2 pr-3'>
