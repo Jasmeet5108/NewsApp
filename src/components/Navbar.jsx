@@ -22,7 +22,7 @@ const Navbar = () => {
                         <button
                             onClick={toggleDropdown}
                             type="button"
-                            className="inline-flex justify-center items-center box-border p-2 border border-gray-300 shadow-sm text-lg font-medium rounded-md text-gray-700 bg-violet-100 hover:bg-violet-200"
+                            className="inline-flex justify-center items-center box-border p-2 border shadow-sm text-lg font-medium rounded-md text-white bg-sky-500 hover:bg-sky-600"
                         >
                             Categories
                             <svg
@@ -41,27 +41,27 @@ const Navbar = () => {
                         </button>
 
                         {isDropdownOpen && (
-                            <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-purple-200 ring-1 ring-black ring-opacity-5">
+                            <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg text-white bg-sky-500 ring-1 ring-black ring-opacity-5">
                                 <div className="py-1 " role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                    <Link to="/" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         General
                                     </Link>
-                                    <Link to="/business" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/business" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         Business
                                     </Link>
-                                    <Link to="/science" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/science" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         Science
                                     </Link>
-                                    <Link to="/technology" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/technology" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         Technology
                                     </Link>
-                                    <Link to="/entertainment" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/entertainment" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         Entertainment
                                     </Link>
-                                    <Link to="/sports" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/sports" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         Sports
                                     </Link>
-                                    <Link to="/health" onClick={hideMenu} className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100" role="menuitem">
+                                    <Link to="/health" onClick={hideMenu} className="block px-4 py-2 text-base text-white hover:bg-gray-100" role="menuitem">
                                         Health
                                     </Link>
                                 </div>
